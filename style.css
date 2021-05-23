@@ -28,11 +28,19 @@ body {
   filter: drop-shadow(0.35rem 0.35rem 0.4rem rgba(226, 141, 13, 0.5));
 }
 
-.heading {
-  font-family: "Vollkorn", serif;
-  font-size: 10vh;
+@media only screen and (max-width: 600px){
+  .heading{
+    font-family: 'Volkorn', serif;
+    font-size: 7vh;
+  }
 }
 
+@media only screen and (min-width: 600px) {
+  .heading {
+    font-family: "Vollkorn", serif;
+    font-size: 10vh;
+  }
+}
 .text {
   font-family: "Volkorn", serif;
 }
@@ -134,50 +142,50 @@ body {
 }
 
 @media only screen and (max-width: 600px) {
-    .card-proj{
-        border-radius: 10px;
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-    }
+  .card-proj {
+    border-radius: 10px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
+}
+
+@media only screen and (min-width: 600px) {
+  .card-proj {
+    border-radius: 10px;
+    transition: transform 1s;
   }
 
-  @media only screen and (min-width: 600px){
-    .card-proj {
-        border-radius: 10px;
-        transition: transform 1s;
-      }
-      
-      .hide {
-        opacity: 0;
-      }
-      
-      .card-proj:hover {
-        box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
-          rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
-          rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-      }
-      
-      .card-proj:hover .hide {
-        opacity: 1;
-      }
-      
-      .card-proj:hover .icons {
-        transition: 0.2s ease-in;
-        transform: scale(1.2);
-      }
+  .hide {
+    opacity: 0;
   }
 
+  .card-proj:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+      rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+      rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+  }
 
+  .card-proj:hover .hide {
+    opacity: 1;
+  }
 
-.footer{
-    background-color: #445ddf;
+  .card-proj:hover .icons {
+    transition: 0.2s ease-in;
+    transform: scale(1.2);
+  }
+}
+
+.footer {
+  background-color: #445ddf;
 }
 
 .footer-box {
-    transform: translateY(-80px);
+  transform: translateY(-80px);
   border-radius: 10px;
   box-shadow: rgba(17, 17, 26, 0.1) 0px 8px 24px,
     rgba(17, 17, 26, 0.1) 0px 16px 56px, rgba(17, 17, 26, 0.1) 0px 24px 80px;
   background-color: white;
 }
+
+
